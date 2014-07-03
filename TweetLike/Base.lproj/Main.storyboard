@@ -74,14 +74,6 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oj1-Zz-gDu">
-                                <rect key="frame" x="61" y="200" width="70" height="57"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6pi-96-GZT">
-                                <rect key="frame" x="230" y="200" width="70" height="57"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -89,8 +81,6 @@
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="tl_Title" destination="wVv-aP-cZQ" id="rD7-BB-YUv"/>
-                        <outlet property="tl_drakeBird" destination="oj1-Zz-gDu" id="YE8-8i-jL8"/>
-                        <outlet property="tl_hemingwayBird" destination="6pi-96-GZT" id="Oqw-HC-aSJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Gp-m9-f6Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
