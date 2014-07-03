@@ -19,16 +19,18 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 //    self.tl_drakeBird.image = [UIImage imageNamed:@"Twitter_logo_white"];
-    self.tl_hemingwayBird.image = [UIImage imageNamed:@"Twitter_logo_white"];
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:self.tl_ImageName]];
+//    self.tl_hemingwayBird.image = [UIImage imageNamed:@"Twitter_logo_white"];
+//    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:self.tl_ImageName]];
     
 }
 
 - (void) loadHemingway {
-    self.tl_hemingwayBird.image = [UIImage imageNamed:@"Twitter_logo_white"];  
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"hemingway-bg"]];
+    self.tl_hemingwayBird.image = [UIImage imageNamed:@"Twitter_logo_white"];
 }
 
 - (void) loadDrake {
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"drake-bg"]];
     self.tl_drakeBird.image = [UIImage imageNamed:@"Twitter_logo_white"];
 
     
