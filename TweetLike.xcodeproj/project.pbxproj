@@ -21,6 +21,7 @@
 		0136AB5819625010003CA63E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0136AB3A19625010003CA63E /* UIKit.framework */; };
 		0136AB6019625010003CA63E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0136AB5E19625010003CA63E /* InfoPlist.strings */; };
 		0136AB6219625010003CA63E /* TweetLikeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0136AB6119625010003CA63E /* TweetLikeTests.m */; };
+		0136AB6D1962586C003CA63E /* TweetLikeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0136AB6C1962586C003CA63E /* TweetLikeCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		0136AB5D19625010003CA63E /* TweetLikeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TweetLikeTests-Info.plist"; sourceTree = "<group>"; };
 		0136AB5F19625010003CA63E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0136AB6119625010003CA63E /* TweetLikeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweetLikeTests.m; sourceTree = "<group>"; };
+		0136AB6B1962586C003CA63E /* TweetLikeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetLikeCollectionViewController.h; sourceTree = "<group>"; };
+		0136AB6C1962586C003CA63E /* TweetLikeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetLikeCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +118,7 @@
 				0136AB4519625010003CA63E /* TweetLikeAppDelegate.h */,
 				0136AB4619625010003CA63E /* TweetLikeAppDelegate.m */,
 				0136AB4819625010003CA63E /* Main.storyboard */,
-				0136AB4B19625010003CA63E /* TweetLikeViewController.h */,
-				0136AB4C19625010003CA63E /* TweetLikeViewController.m */,
+				0136AB6E19625878003CA63E /* ViewControllers */,
 				0136AB4E19625010003CA63E /* Images.xcassets */,
 				0136AB3D19625010003CA63E /* Supporting Files */,
 			);
@@ -150,6 +152,17 @@
 				0136AB5E19625010003CA63E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0136AB6E19625878003CA63E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0136AB4B19625010003CA63E /* TweetLikeViewController.h */,
+				0136AB4C19625010003CA63E /* TweetLikeViewController.m */,
+				0136AB6B1962586C003CA63E /* TweetLikeCollectionViewController.h */,
+				0136AB6C1962586C003CA63E /* TweetLikeCollectionViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +266,7 @@
 				0136AB4D19625010003CA63E /* TweetLikeViewController.m in Sources */,
 				0136AB4319625010003CA63E /* main.m in Sources */,
 				0136AB4719625010003CA63E /* TweetLikeAppDelegate.m in Sources */,
+				0136AB6D1962586C003CA63E /* TweetLikeCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +394,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TweetLike/TweetLike-Prefix.pch";
 				INFOPLIST_FILE = "TweetLike/TweetLike-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,6 +408,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TweetLike/TweetLike-Prefix.pch";
 				INFOPLIST_FILE = "TweetLike/TweetLike-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
