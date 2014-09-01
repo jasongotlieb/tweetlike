@@ -7,6 +7,7 @@
 //
 
 #import "TweetLikeViewController.h"
+#import "ChainMaker.h"
 
 @interface TweetLikeViewController ()
 
@@ -55,9 +56,17 @@
 }
 
 - (IBAction)drakeButtonPressed:(id)sender {
+    NSLog(@"Drake Tweet Button Pressed");
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"wordsOfDrake" ofType:@"txt"];
+    ChainMaker *chainMaker = [[ChainMaker alloc] initWithPath:path];
+    [chainMaker composeTweet];
 }
 
 - (IBAction)hemingwayButtonPressed:(id)sender {
+    NSLog(@"Hemingway Tweet Button Pressed");
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"wordsOfHemingway" ofType:@"txt"];
+    ChainMaker *chainMaker = [[ChainMaker alloc] initWithPath:path];
+    [chainMaker composeTweet];
 }
 
 - (IBAction)closeButtonPressed:(id)sender {
